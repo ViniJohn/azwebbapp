@@ -11,6 +11,8 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'azwebapp.settings')
+settings_module = 'azwebapp.deployement' if 'WEBSITE_HOSTNAME' in os.environ else 'azwebapp.settings'
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', settings_module)
 
 application = get_wsgi_application()
