@@ -1,0 +1,71 @@
+{
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "editor.formatOnSave": true,
+    "editor.fontFamily": "FiraCode Nerd Font Mono",
+    "editor.lineNumbers": "relative",
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "editor.fontSize": 16,
+    "vim.leader": "<space>",
+    "vim.insertModeKeyBindings": [
+        { //exit insert mode
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                " ",
+                "c"
+            ],
+            "commands": [
+                "workbench.action.files.save",
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+        {
+            "before": [
+                " ",
+                "f"
+            ],
+            "commands": [
+                "workbench.view.explorer"
+            ]
+        },
+        {
+            "before": [
+                " ",
+                "s"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                " ",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                " ",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+        },
+    ]
+}
